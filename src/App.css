@@ -1,33 +1,155 @@
-.App {
-  text-align: center;
-}
+@import '~antd/dist/antd.css';
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+header {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: .5rem 1rem !important;
+}
+
+.sticky {
+  position: fixed;
+  width: 100%;
+  background: white;
+  top: 0;
+}
+
+.brand-logo > img {
+  width: 100px;
+  height: 80px;
+}
+
+.site-nav {
+  margin: auto 0;
+  margin-left: auto;
+}
+
+.nav {
+  display: flex;
+  margin: 0;
+}
+
+.nav-link {
+  padding: 1rem 1.5rem;
+  color: black;
+  font-weight: bold;
+}
+
+.nav-link:hover {
+  color: #52a7fe;
+}
+
+.hero-image img {
+  max-width: 100%;
+}
+
+.hero-content {
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem 0;
+}
+
+.hero-point {
+  margin: 0;
+  font-family: 'Bubblegum Sans', cursive;
+  font-size: 6vmin;
+  font-weight: bold;
+}
+
+.hero-login {
+  margin: auto 0;
+}
+
+.btn-login {
+  background-color: #645eeb;
   color: white;
+  border: none;
+  padding: .5rem 4rem;
+  border-radius: 5px;
+  width: 100%;
+  transition: 300ms;
 }
 
-.App-link {
-  color: #61dafb;
+.btn-login:hover {
+  transform: scale(1.15);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.feature {
+  display: flex;
+  flex: 1;
+  padding: 1rem 0;
+}
+
+.feature-image {
+  width: 50%;
+}
+
+.feature-image > img {
+  max-width: 100%;
+  display: block;
+  margin: auto;
+}
+
+.feature-content {
+  font-family: 'Bubblegum Sans', cursive;
+  margin-left: 1.5rem;
+  width: 50%;
+}
+
+.feature-content > h2 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.feature-content > p {
+  font-size: 1.25rem;
+}
+
+.footer-info {
+  background-color: black;
+  color: white;
+  padding: 2rem 2rem;
+}
+
+.footer-info-text {
+  font-size: 1.25rem;
+}
+
+.footer-info-cta {
+  float: right;
+  background-color: #fc8a19;
+  border: none;
+  border-radius: 20px;
+  padding: .5rem 2.5rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.footer-info-cta:hover {
+  background-color: #dd9933;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+}
+
+@media (max-width: 680px) {
+  .hero-content {
+    flex-direction: column;
+    align-items: center;
   }
-  to {
-    transform: rotate(360deg);
+
+  .hero-content > * {
+    padding: .25rem;
+  }
+
+  .feature {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feature-content, .feature-image {
+    width: 100%;
+    padding-bottom: 1rem;
   }
 }
