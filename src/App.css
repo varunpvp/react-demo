@@ -2,14 +2,62 @@
 
 header {
   display: flex;
-  padding: .5rem 1rem !important;
+  padding: .5rem 1rem;
+  justify-content: space-between;
+  width: 90%;
+  margin-left: 5%;
 }
 
 .sticky {
   position: fixed;
-  width: 100%;
   background: white;
+  margin: 0;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  width: 100%;
   top: 0;
+}
+
+.hamburger {
+  display: none;
+  margin: auto 0;
+}
+
+.mobile-nav {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 95%;
+  height: 100%;
+  background-color: white;
+  transition: transform 300ms;
+  transform: translateX(100%);
+}
+
+.mobile-nav.show-nav {
+  transform: translateX(0%);
+}
+
+.wrapper {
+  transition: 300ms;
+}
+
+.wrapper.show-nav {
+  transform: translateX(-95%);
+}
+
+.mobile-nav-close {
+  display: inline-block;
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  background-color: #eee;
+  width: 100%;
+  cursor: pointer;
+}
+
+hr {
+  margin: 0;
 }
 
 .brand-logo > img {
@@ -19,7 +67,6 @@ header {
 
 .site-nav {
   margin: auto 0;
-  margin-left: auto;
 }
 
 .nav {
@@ -104,17 +151,19 @@ header {
 }
 
 .footer-info {
+  display: flex;
   background-color: black;
   color: white;
   padding: 2rem 2rem;
+  justify-content: space-between;
 }
 
 .footer-info-text {
   font-size: 1.25rem;
+  padding: 0 1rem;
 }
 
 .footer-info-cta {
-  float: right;
   background-color: #fc8a19;
   border: none;
   border-radius: 20px;
@@ -122,6 +171,7 @@ header {
   text-transform: uppercase;
   font-weight: bold;
   cursor: pointer;
+  width: 240px;
 }
 
 .footer-info-cta:hover {
@@ -133,7 +183,34 @@ footer {
   padding: 1rem;
 }
 
-@media (max-width: 680px) {
+@media (max-width: 720px) {
+
+  .info-bar {
+    text-align: center;
+  }
+
+  .site-nav {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: block;
+  }
+
+  .nav {
+    flex-direction: column;
+  }
+
+  .nav-item {
+    padding: 1rem 2rem;
+    border-bottom: 1px solid lightgray;
+  }
+
+  .hamburger {
+    cursor: pointer;
+    display: block;
+  }
+
   .hero-content {
     flex-direction: column;
     align-items: center;
@@ -151,5 +228,21 @@ footer {
   .feature-content, .feature-image {
     width: 100%;
     padding-bottom: 1rem;
+  }
+
+  .footer-info {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .footer-info-text {
+    padding-bottom: 1rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .info-bar {
+    display: none;
   }
 }
