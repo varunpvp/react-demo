@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/react-demo/static/css/main.4c151972.chunk.css",
+    "main.js": "/react-demo/static/js/main.448b8b5d.chunk.js",
+    "main.js.map": "/react-demo/static/js/main.448b8b5d.chunk.js.map",
+    "runtime~main.js": "/react-demo/static/js/runtime~main.3dcdfef1.js",
+    "runtime~main.js.map": "/react-demo/static/js/runtime~main.3dcdfef1.js.map",
+    "static/css/2.536f1d1e.chunk.css": "/react-demo/static/css/2.536f1d1e.chunk.css",
+    "static/js/2.e9bf0032.chunk.js": "/react-demo/static/js/2.e9bf0032.chunk.js",
+    "static/js/2.e9bf0032.chunk.js.map": "/react-demo/static/js/2.e9bf0032.chunk.js.map",
+    "index.html": "/react-demo/index.html",
+    "precache-manifest.189cc6e81d6650d95d8a17c6ff131578.js": "/react-demo/precache-manifest.189cc6e81d6650d95d8a17c6ff131578.js",
+    "service-worker.js": "/react-demo/service-worker.js",
+    "static/css/2.536f1d1e.chunk.css.map": "/react-demo/static/css/2.536f1d1e.chunk.css.map",
+    "static/css/main.4c151972.chunk.css.map": "/react-demo/static/css/main.4c151972.chunk.css.map",
+    "static/media/Live-lessons.png": "/react-demo/static/media/Live-lessons.85f8716d.png",
+    "static/media/Solve-puzzles.png": "/react-demo/static/media/Solve-puzzles.9c914520.png",
+    "static/media/blindbot.png": "/react-demo/static/media/blindbot.8c43bac5.png",
+    "static/media/hero.png": "/react-demo/static/media/hero.e10590b9.png",
+    "static/media/play-feature.png": "/react-demo/static/media/play-feature.f96bfd9b.png",
+    "static/media/practice-positions.png": "/react-demo/static/media/practice-positions.716665a1.png",
+    "static/media/store-games.png": "/react-demo/static/media/store-games.2d87ba1d.png"
+  }
+}
